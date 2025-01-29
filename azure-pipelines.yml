@@ -7,11 +7,12 @@ trigger:
 
 
 pool:
-  name: 'ubuntu-latest'
+  name: 'Default'
 steps:
 
-- task: Bash@3
+- task: PowerShell@1
   inputs:
-   script:
+    targetType: 'inline'
+    script:
      echo "Hello, World"
     
